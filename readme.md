@@ -7,7 +7,7 @@ This project brings Postman's collection mocking capability locally enabling you
 ## Quick Start
 
 ```bash
-npm install -g @jordanwalsh23/postman-local-mock-server
+npm install -g @iyogeshjoshi/postman-mock-server
 postman-local -c path/to/collection.json -p 8080
 ```
 
@@ -20,11 +20,11 @@ postman-local -c path/to/collection.json -p 8080
 - Full support for [Postman's dynamic variables](https://learning.postman.com/docs/writing-scripts/script-references/variables-list/) in example responses.
 
 ## Using in your project
-1. Run `npm install @jordanwalsh23/postman-local-mock-server`
+1. Run `npm install @iyogeshjoshi/postman-mock-server`
 2. Add the dependency to your project and start the server.
 
 ```
-const PostmanLocalMockServer = require('@jordanwalsh23/postman-local-mock-server');
+const PostmanLocalMockServer = require('@iyogeshjoshi/postman-mock-server');
 
 //Create the collection object.
 let collection = JSON.parse(fs.readFileSync('./test/test-collection.json', 'utf8'));
